@@ -1,4 +1,4 @@
-# Template Website Company Profile Digital Creative
+# Template Website Company Profile
 
 Template website profil perusahaan digital dengan tampilan modern dan profesional.
 
