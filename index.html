@@ -3,7 +3,107 @@
 <head>
   <meta charset="UTF-8">
   <title>Profil Saya - Fachrul Rizki</title>
-  <link rel="stylesheet" href="../style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #3498db;
+      color: #fff;
+      text-align: center;
+      padding: 30px 15px;
+    }
+    header .judul {
+      margin: 0;
+      font-size: 32px;
+    }
+    header .deskripsi {
+      margin: 5px 0 0;
+      font-size: 16px;
+      font-weight: 300;
+    }
+    nav.menu {
+      background: #2c3e50;
+    }
+    nav.menu ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+    nav.menu ul li {
+      margin: 0;
+    }
+    nav.menu ul li a {
+      display: block;
+      padding: 12px 20px;
+      text-decoration: none;
+      color: #ecf0f1;
+      font-weight: bold;
+    }
+    nav.menu ul li a:hover,
+    nav.menu ul li a.active {
+      background: #34495e;
+    }
+    .wrap {
+      padding: 20px;
+    }
+    .profile-card {
+      max-width: 700px;
+      margin: 30px auto;
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .profile-header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #3498db;
+      margin-bottom: 15px;
+    }
+    .profile-header h2 {
+      margin: 10px 0 5px;
+      font-size: 24px;
+      color: #333;
+    }
+    .profile-header p {
+      color: #777;
+    }
+    .profile-body h3 {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #333;
+    }
+    .profile-body p, .profile-body ul {
+      color: #555;
+      line-height: 1.6;
+    }
+    .profile-body ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .profile-body ul li {
+      margin: 5px 0;
+    }
+    .profile-body a {
+      color: #3498db;
+      text-decoration: none;
+    }
+    .profile-body a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
 
@@ -13,17 +113,17 @@
     <p class="deskripsi">Informasi singkat tentang saya</p>
   </header>
 
-  <div class="wrap">
-    <!-- Menu -->
-    <nav class="menu">
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="#">Tutorial</a></li>
-        <li><a href="profile.html" class="active">Informasi</a></li>
-      </ul>
-    </nav>
+  <!-- Menu -->
+  <nav class="menu">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="#">Tutorial</a></li>
+      <li><a href="profile.html" class="active">Informasi</a></li>
+    </ul>
+  </nav>
 
-    <!-- Konten Profile -->
+  <!-- Konten Profile -->
+  <div class="wrap">
     <div class="profile-card">
       <div class="profile-header">
         <img src="../gambar/profile.jpg" alt="Foto Profil" class="profile-img">
