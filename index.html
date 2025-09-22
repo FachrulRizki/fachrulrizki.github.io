@@ -1,68 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-	<title>Fachrul Rizki Blog</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <title>Profil Saya - Fachrul Rizki</title>
+  <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-	
-	<!-- bagian header template -->
-	<header>
-		<h1 class="judul">Blog Fachrul</h1>
-		<p class="deskripsi">Tutorial Web Development & Machine Learning lengkap berbahasa indonesia</p>
-	</header>
-	<!-- akhir bagian header template -->
-	
-	<div class="wrap">
-		<!-- bagian menu -->
-		<nav class="menu">
-			<ul>
-				<li>
-					<a href="index.html">Home</a>
-				</li>
-				<li>
-					<a href="#">Tutorial</a>
-				</li>
-				<li>
-					<a href="informasi/profile.html">Informasi</a>
-				</li>
-			</ul>
-		</nav>
-		<!-- akhir bagian menu -->
 
-		<!-- bagian konten Blog -->
-		<div class="blog">
-			<div class="conteudo">
-				<div class="post-info">
-					Di Posting Oleh <b>Fachrul Rizki</b>
-				</div>
-				<img src="gambar/web.png">
-				<h1> Belajar Membuat Website </h1>
-				<hr>
-				<p>
-					<b> Website </b> adalah lokasi pusat halaman web yang saling terhubung dan diakses dengan mengunjungi halaman rumah dari website menggunakan browser. 
-                    Misalnya, URL alamat website Blog Fachrul adalah https://fachrulrizki.github.io/. Dari beranda kami, Anda bisa mendapatkan akses ke salah satu halaman web (beranda) yang terdapat di website kami. 
-                    Pengertian website juga bisa berarti pula kumpulan halaman web yang dikelompokkan bersama dan biasanya dihubungkan bersama dalam berbagai cara. Sering disebut "website" atau "situs".
-				</p>				
-				<a href="#" class="continue-lendo">Selengkapnya →</a>
-			</div>
-			<div class="conteudo">
-				<div class="post-info">
-					Di Posting Oleh <b>Fachrul Rizki</b>
-				</div>
-				<img src="gambar/ml.jpg">
-				<h1> Belajar Machine Learning </h1>
-				<hr>
-				<p>
-					Teknologi machine learning (ML) adalah mesin yang dikembangkan untuk bisa belajar dengan sendirinya tanpa arahan dari penggunanya. 
-                    Pembelajaran mesin dikembangkan berdasarkan disiplin ilmu lainnya seperti statistika, 
-                    matematika dan data mining sehingga mesin dapat belajar dengan menganalisa data tanpa perlu di program ulang atau diperintah.
-				</p>				
-				<a href="#" class="continue-lendo">Selengkapnya →</a>
-			</div>
-		</div>
-		<!-- akhir bagian konten Blog -->
-	</div>
+  <!-- Header -->
+  <header>
+    <h1 class="judul">Profil Saya</h1>
+    <p class="deskripsi">Informasi singkat tentang saya</p>
+  </header>
+
+  <div class="wrap">
+    <!-- Menu -->
+    <nav class="menu">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#">Tutorial</a></li>
+        <li><a href="profile.html" class="active">Informasi</a></li>
+      </ul>
+    </nav>
+
+    <!-- Konten Profile -->
+    <div class="profile-card">
+      <div class="profile-header">
+        <img src="../gambar/profile.jpg" alt="Foto Profil" class="profile-img">
+        <h2>Fachrul Rizki</h2>
+        <p>Web Developer & Machine Learning Enthusiast</p>
+      </div>
+      <div class="profile-body">
+        <h3>Tentang Saya</h3>
+        <p>
+          Saya seorang pengembang web dan pembelajar machine learning yang
+          senang berbagi pengetahuan melalui blog ini.
+        </p>
+
+        <h3>Kontak</h3>
+        <ul>
+          <li>Email: <a href="mailto:fachrulrizki@example.com">fachrulrizki@example.com</a></li>
+          <li>GitHub: <a href="https://github.com/fachrulrizki" target="_blank">github.com/fachrulrizki</a></li>
+          <li>LinkedIn: <a href="#">linkedin.com/in/fachrulrizki</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
 </body>
 </html>
