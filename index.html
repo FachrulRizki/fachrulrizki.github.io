@@ -1,151 +1,414 @@
 <!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <title>Profil Saya - Fachrul Rizki</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f6f8;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background: #3498db;
-      color: #fff;
-      text-align: center;
-      padding: 30px 15px;
-    }
-    header .judul {
-      margin: 0;
-      font-size: 32px;
-    }
-    header .deskripsi {
-      margin: 5px 0 0;
-      font-size: 16px;
-      font-weight: 300;
-    }
-    nav.menu {
-      background: #2c3e50;
-    }
-    nav.menu ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-    }
-    nav.menu ul li {
-      margin: 0;
-    }
-    nav.menu ul li a {
-      display: block;
-      padding: 12px 20px;
-      text-decoration: none;
-      color: #ecf0f1;
-      font-weight: bold;
-    }
-    nav.menu ul li a:hover,
-    nav.menu ul li a.active {
-      background: #34495e;
-    }
-    .wrap {
-      padding: 20px;
-    }
-    .profile-card {
-      max-width: 700px;
-      margin: 30px auto;
-      background: #fff;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    .profile-header {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .profile-img {
-      width: 120px;
-      height: 120px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 4px solid #3498db;
-      margin-bottom: 15px;
-    }
-    .profile-header h2 {
-      margin: 10px 0 5px;
-      font-size: 24px;
-      color: #333;
-    }
-    .profile-header p {
-      color: #777;
-    }
-    .profile-body h3 {
-      margin-top: 20px;
-      font-size: 18px;
-      color: #333;
-    }
-    .profile-body p, .profile-body ul {
-      color: #555;
-      line-height: 1.6;
-    }
-    .profile-body ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    .profile-body ul li {
-      margin: 5px 0;
-    }
-    .profile-body a {
-      color: #3498db;
-      text-decoration: none;
-    }
-    .profile-body a:hover {
-      text-decoration: underline;
-    }
-  </style>
-</head>
-<body>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Website Company Profile Fachrul Rizki" />
+    <meta name="author" content="Fachrul Rizki" />
 
-  <!-- Header -->
-  <header>
-    <h1 class="judul">Profil Saya</h1>
-    <p class="deskripsi">Informasi singkat tentang saya</p>
-  </header>
+    <title>Fachrul Rizki</title>
+    <link
+      rel="shortcut icon"
+      href="assets/img/py.svg"
+      type="image/x-icon"
+    />
 
-  <!-- Menu -->
-  <nav class="menu">
-    <ul>
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="#">Tutorial</a></li>
-      <li><a href="profile.html" class="active">Informasi</a></li>
-    </ul>
-  </nav>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-  <!-- Konten Profile -->
-  <div class="wrap">
-    <div class="profile-card">
-      <div class="profile-header">
-        <img src="../gambar/profile.jpg" alt="Foto Profil" class="profile-img">
-        <h2>Fachrul Rizki</h2>
-        <p>Web Developer & Machine Learning Enthusiast</p>
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AOS Animation -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body id="home" class="d-flex flex-column h-100">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-3 fixed-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#home">
+          <img src="assets/img/py.svg" width="40" class="me-2" /> Asisten_SpaceX
+        </a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#home" class="nav-link mx-2">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#services" class="nav-link mx-2">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link mx-2">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#portfolio" class="nav-link mx-2">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link mx-2">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="profile-body">
-        <h3>Tentang Saya</h3>
-        <p>
-          Saya seorang pengembang web dan pembelajar machine learning yang
-          senang berbagi pengetahuan melalui blog ini.
+    </nav>
+
+    <!-- Hero -->
+    <section id="hero" class="mt-5">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 text-center text-lg-start" data-aos="fade-right">
+            <h1 class="fw-bold mb-3">Hi, I'm <span>Fachrul Rizki</span></h1>
+            <h3 class="text-muted mb-4"><span id="typing"></span></h3>
+            <p class="lead mb-4">
+              I build modern websites and explore machine learning to create
+              smart solutions.
+            </p>
+
+            <!-- GitHub -->
+            <a
+              href="https://github.com/fachrulrizki"
+              target="_blank"
+              class="btn btn-primary rounded-pill px-4 me-2"
+            >
+              <i class="bi bi-github me-2"></i> GitHub
+            </a>
+
+            <!-- Email -->
+            <a
+              href="mailto:fachrulrizki08@gmail.com"
+              class="btn btn-outline-danger rounded-pill px-4 me-2"
+            >
+              <i class="bi bi-envelope me-2"></i> Contact Me
+            </a>
+
+            <!-- WhatsApp -->
+            <a
+              href="https://wa.me/6282281607797?text=Halo%20Fachrul,%20saya%20tertarik%20dengan%20blog%20dan%20project%20Anda.%20Boleh%20saya%20tanya%20lebih%20lanjut?"
+              target="_blank"
+              class="btn btn-outline-success rounded-pill px-4"
+            >
+              <i class="bi bi-whatsapp me-2"></i> WhatsApp
+            </a>
+          </div>
+
+          <div class="col-lg-6 text-center" data-aos="fade-left">
+            <img
+              src="assets/img/heroes.svg"
+              class="img-fluid"
+              alt="Fachrul Rizki"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="container text-center py-5">
+      <h2 class="fw-bold mb-3" data-aos="fade-up">Services</h2>
+      <p class="mb-5" data-aos="fade-up" data-aos-delay="100">
+        What I can do for you
+      </p>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="zoom-in">
+          <div class="card border-0 shadow-sm rounded-4 p-4">
+            <i class="bi bi-code-slash fs-1 text-primary mb-3"></i>
+            <h5>Web Development</h5>
+            <p>Build modern, responsive, and scalable web applications.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="150">
+          <div class="card border-0 shadow-sm rounded-4 p-4">
+            <i class="bi bi-bar-chart fs-1 text-success mb-3"></i>
+            <h5>Machine Learning</h5>
+            <p>Develop smart models that learn from your data.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="card border-0 shadow-sm rounded-4 p-4 text-center">
+            <i class="bi bi-journal-bookmark fs-1 text-primary mb-3"></i>
+            <h5 class="fw-bold">Programming Masterclass</h5>
+            <p class="text-muted">
+              Learn coding step by step with interactive modules.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="container py-5">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6" data-aos="fade-right">
+          <img
+            src="assets/img/about.svg"
+            class="img-fluid rounded-4 shadow"
+            alt="About"
+          />
+        </div>
+        <div class="col-lg-6" data-aos="fade-left">
+          <h2 class="fw-bold mb-3">About Me</h2>
+          <p>
+            I am passionate about technology, design, and problem-solving. With
+            experience in web development and machine learning, I help
+            businesses transform ideas into impactful digital products.
+          </p>
+          <ul>
+            <li>✔ Experienced in PHP, Laravel, JS</li>
+            <li>✔ Familiar with Python & ML frameworks</li>
+            <li>✔ Interested in digital transformation</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="container py-5 text-center">
+      <h2 class="fw-bold mb-3" data-aos="fade-up">Portfolio</h2>
+      <p class="mb-5" data-aos="fade-up" data-aos-delay="100">
+        Some of my recent projects
+      </p>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="zoom-in">
+          <div class="card border-0 rounded-4 shadow-sm">
+            <img
+              src="assets/img/portfolio/SIMRS.png"
+              class="portfolio-img rounded-top-4"
+              alt="Portfolio"
+            />
+            <div class="card-body">
+              <h6 class="fw-semibold mb-3">
+                SIMRS (Hospital Information System) <br />
+                with AI Voice-to-Text
+              </h6>
+              <p class="text-muted mb-2">Frameworks & Database:</p>
+              <div>
+                <span class="badge bg-danger rounded-pill me-2">Laravel</span>
+                <span class="badge bg-info text-dark rounded-pill me-2"
+                  >MySQL</span
+                >
+                <span class="badge bg-success rounded-pill me-2"
+                  >AI Voice API</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="150">
+          <div class="card border-0 rounded-4 shadow-sm">
+            <img
+              src="assets/img/portfolio/Manajemen Aktivitas Keperawatan.png"
+              class="portfolio-img rounded-top-4"
+              alt="Portfolio"
+            />
+            <div class="card-body">
+              <h6 class="fw-semibold mb-3">
+                Nursing Activity Management System <br />
+                Monitoring & Microlearning
+              </h6>
+              <p class="text-muted mb-2">Frameworks & Database:</p>
+              <div>
+                <span class="badge bg-danger rounded-pill me-2">Laravel</span>
+                <span class="badge bg-info text-dark rounded-pill me-2"
+                  >MySQL</span
+                >
+                <span class="badge bg-success rounded-pill me-2"
+                  >Bootstrap</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="card border-0 rounded-4 shadow-sm">
+            <img
+              src="assets/img/portfolio/Monitoring TB Antar Faskes.png"
+              class="portfolio-img rounded-top-4"
+              alt="Portfolio"
+            />
+            <div class="card-body">
+              <h6 class="fw-semibold mb-3">
+                Tuberculosis Health Notification Application
+              </h6>
+              <p class="text-muted mb-2">Frameworks & Database:</p>
+              <div>
+                <span class="badge bg-danger rounded-pill me-2">Laravel</span>
+                <span class="badge bg-info text-dark rounded-pill me-2"
+                  >MySQL</span
+                >
+                <span class="badge bg-success rounded-pill me-2"
+                  >Bootstrap</span
+                >
+                <span class="badge bg-warning rounded-pill me-2">Pusher</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="card border-0 rounded-4 shadow-sm">
+            <img
+              src="assets/img/portfolio/BliinGeh.png"
+              class="portfolio-img rounded-top-4"
+              alt="Portfolio"
+            />
+            <div class="card-body">
+              <h6 class="fw-semibold mb-3">
+                <br />
+                Online Store Mobile Application for MSMEs Bandar Lampung
+              </h6>
+              <p class="text-muted mb-2">Frameworks & Database:</p>
+              <div>
+                <span class="badge bg-danger rounded-pill me-2">Kotlin</span>
+                <span class="badge bg-info text-dark rounded-pill me-2"
+                  >MySQL</span
+                >
+                <span class="badge bg-success rounded-pill me-2">API</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="card border-0 rounded-4 shadow-sm">
+            <img
+              src="assets/img/portfolio/Remunerasi.png"
+              class="portfolio-img rounded-top-4"
+              alt="Portfolio"
+            />
+            <div class="card-body">
+              <h6 class="fw-semibold mb-3">
+                Health Center Remuneration Application
+              </h6>
+              <p class="text-muted mb-2">Frameworks & Database:</p>
+              <div>
+                <span class="badge bg-danger rounded-pill me-2">Laravel</span>
+                <span class="badge bg-info text-dark rounded-pill me-2"
+                  >MySQL</span
+                >
+                <span class="badge bg-success rounded-pill me-2"
+                  >Bootstrap</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="card border-0 rounded-4 shadow-sm">
+            <img
+              src="assets/img/portfolio/Geberaksi.png"
+              class="portfolio-img rounded-top-4"
+              alt="Portfolio"
+            />
+            <div class="card-body">
+              <h6 class="fw-semibold mb-3">
+                <br />
+                Educational Application About the Importance of <br />
+                Exclusive Breastfeeding for Mothers and Babies
+              </h6>
+              <br />
+              <p class="text-muted mb-2">Frameworks & Database:</p>
+              <div>
+                <span class="badge bg-danger rounded-pill me-2">Laravel</span>
+                <span class="badge bg-info text-dark rounded-pill me-2"
+                  >MySQL</span
+                >
+                <span class="badge bg-success rounded-pill me-2"
+                  >Bootstrap</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Location Office -->
+    <section id="contact" class="container py-5">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold" data-aos="fade-up">My Location Office</h2>
+        <p data-aos="fade-up" data-aos-delay="100">
+          Let's collaborate and support innovation together 🚀
         </p>
-
-        <h3>Kontak</h3>
-        <ul>
-          <li>Email: <a href="mailto:fachrulrizki@example.com">fachrulrizki@example.com</a></li>
-          <li>GitHub: <a href="https://github.com/fachrulrizki" target="_blank">github.com/fachrulrizki</a></li>
-          <li>LinkedIn: <a href="#">linkedin.com/in/fachrulrizki</a></li>
-        </ul>
       </div>
-    </div>
-  </div>
+      <div class="row g-4">
+        <!-- Map -->
+        <div class="col-lg-6" data-aos="fade-right">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.2431905441766!2d105.2270672!3d-5.5338648999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e4127f41ec9ceb3%3A0xefa23761b28a6790!2sHanura%2C%20Kec.%20Padang%20Cermin%2C%20Kabupaten%20Pesawaran%2C%20Lampung!5e0!3m2!1sen!2sid!4v1727000000000!5m2!1sen!2sid"
+            class="rounded-4 shadow-sm"
+            width="100%"
+            height="350"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
 
-</body>
+        <!-- Donation -->
+        <div
+          class="col-lg-6 d-flex align-items-center justify-content-center"
+          data-aos="fade-left"
+        >
+          <div class="card border-0 shadow-sm rounded-4 p-4 text-center">
+            <i class="bi bi-heart-fill text-danger fs-1 mb-3"></i>
+            <h5 class="fw-bold">Support My Projects</h5>
+            <p class="text-muted mb-3">
+              You can support me by sending a donation via <strong>DANA</strong>
+            </p>
+            <img
+              src="assets/img/portfolio/dana.jpeg"
+              alt="Dana QR"
+              class="img-fluid rounded-3 shadow-sm mb-3 d-block mx-auto"
+              style="max-width: 200px"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4">
+      <div class="container text-center">
+        <p class="mb-1">&copy; 2025 Fachrul Rizki. All rights reserved.</p>
+        <div>
+          <a href="https://www.linkedin.com/in/fachrul-rizki/" class="mx-2"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
